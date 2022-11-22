@@ -231,7 +231,7 @@ body {
   background: var(--ourteam-fon);
 }
 .ourteam .container {
-  padding: 94px auto;
+  padding: 94px 15px;
 }
 .ourteam-head {
   font-size: 36px;
