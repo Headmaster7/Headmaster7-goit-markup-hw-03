@@ -31,8 +31,7 @@ body {
   background-color: var(--second-color);
 }
 .container {
-  max-width: 1200px;
-  width: auto;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -130,7 +129,7 @@ body {
 }
 .hero .container {
   display: flex;
-  padding-top: 200px;
+  padding: 200px 15px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -150,7 +149,6 @@ body {
   background: var(--link-color);
   width: 200px;
   height: 50px;
-  margin-bottom: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -182,12 +180,14 @@ body {
   overflow: hidden;
 }
 .features .container {
-  padding: 94px 0;
+  padding: 94px 15px;
 }
 .features-list {
   display: flex;
   flex-wrap: nowrap;
-  gap: 30px;
+}
+.features-list li:not(:last-child) {
+  margin-right: 30px;
 }
 .features-heads {
   font-size: 14px;
@@ -231,7 +231,7 @@ body {
   background: var(--ourteam-fon);
 }
 .ourteam .container {
-  padding: 94px 0;
+  padding: 94px auto;
 }
 .ourteam-head {
   font-size: 36px;
@@ -244,7 +244,6 @@ body {
 .ourteam-list {
   display: flex;
   flex-wrap: nowrap;
-  gap: 30px;
 }
 .ourteam-card {
   background: var(--second-color);
@@ -252,11 +251,15 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.ourteam-list li:not(:last-child) {
+  margin-right: 30px;
+}
 .ourteam-card .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 270px;
   padding: 30px 0;
 }
 .cardname {
@@ -280,10 +283,11 @@ body {
   background-color: var(--back-color);
 }
 .footer .container {
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 .footer .logo {
   margin-right: 0;
+  padding: 0;
 }
 .footer-list {
   margin-top: 28px;
@@ -318,7 +322,7 @@ body {
 /* PORTFOLIO-HERO */
 
 .portfolio .container {
-  padding: 94px 0;
+  padding: 94px 15px;
 }
 .portfolio-buttons {
   display: flex;
@@ -356,14 +360,17 @@ body {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-between;
+  row-gap: 30px;
 }
 .portfolio-items {
   box-sizing: border-box;
+
   background: var(--second-color);
   border: 1px solid var(--border-box-color);
 }
 .portfolio-items .container {
+  width: 370px;
   padding: 20px 24px;
 }
 .portfolio-title-card {
